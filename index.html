@@ -1,43 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A good ride✨😁😛</title>
+    <title>better sitting position😘🥰</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: ##564d4d;
             padding: 20px;
         }
-        .video-container {
+        .video-title {
+            font-size: 1.7em;
+            font-weight: bold;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
             max-width: 720px;
-            margin: auto;
-            background: #fff;
-            padding: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            margin: 0 auto;
         }
         video {
             width: 100%;
-            border-radius: 8px;
+            max-width: 100%;
+            border-radius: 10px;
+            display: block;
         }
-        .ad-banner {
-            margin-top: 10px;
+        .ad-banner-inside {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 320px;
+            height: 50px;
+            background: rgba(255,255,255,0.92);
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            overflow: hidden;
         }
-        .ad-banner img {
-            width: 100%;
-            max-height: 90px;
-            border-radius: 8px;
+        @media (max-width: 400px) {
+            .ad-banner-inside {
+                width: 95vw;
+                height: 40px;
+                font-size: 0.85em;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="video-title">A good ride✨😁<span aria-label="smile" role="img"></span></div>
+    <div class="video-title">better sitting position😘🥰<span aria-label="smile" role="img"></span></div>
     <div class="video-wrapper">
         <div class="ad-banner-inside" id="ad-inside-video"></div>
-        <video controls poster="https://cdn.videy.co/gWQlAVrG1.mp4">
+        <video controls poster="https://cdn.videy.co/oIMnngYY1.mp4">
             <source src="https://cdn.videy.co/gWQlAVrG1.mp4" type="video/mp4">
         </video>
     </div>
@@ -45,11 +67,11 @@
         var adDiv = document.getElementById('ad-inside-video');
         var s1 = document.createElement('script');
         s1.type = 'text/javascript';
-        s1.text = "atOptions = { 'key' : '97769e31ab76979e0ee340bc5c857351', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };";
+        s1.text = "atOptions = { 'key' : '4a2fc598ebbbdbc95eb3bef73798c939', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };";
         adDiv.appendChild(s1);
         var s2 = document.createElement('script');
         s2.type = 'text/javascript';
-        s2.src = "//www.highperformanceformat.com/97769e31ab76979e0ee340bc5c857351/invoke.js";
+        s2.src = "//www.highperformanceformat.com/4a2fc598ebbbdbc95eb3bef73798c939/invoke.js";
         adDiv.appendChild(s2);
     </script>
 </body>
